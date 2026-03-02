@@ -78,4 +78,4 @@ catch {
     Write-Warning "Failed to process $ItemPath : $_"
 }
 
-Write-Host "Scan complete! Results saved to filesystem-scan.csv" -ForegroundColor Green
+Write-Information "Scan complete! Results saved to filesystem-scan.csv" -ForegroundColor Green

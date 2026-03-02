@@ -1,3 +1,5 @@
 Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
 
-Invoke-ScriptAnalyzer -Path ".\exercises\Get-Drivers.ps1"
+Get-ChildItem -Path ".\exercises" `
+    -Recurse `
+    -Filter "*.ps1" | Invoke-ScriptAnalyzer  -Settings .\Rules.rule

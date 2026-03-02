@@ -6,4 +6,4 @@ $Drivers | Select-Object DeviceName, Manufacturer, DriverVersion, DriverDate, Dr
     Sort-Object DeviceName |
     Export-Csv -Path ".\drivers.csv" -NoTypeInformation
 
-Write-Host "Drivers exported to drivers.csv" -ForegroundColor Green
+Write-Information "Drivers exported to drivers.csv" -ForegroundColor Green
