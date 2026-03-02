@@ -9,6 +9,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - run: ./exercises/test.ps1
+      - run: ./Validate-Scripts.ps1
         shell: pwsh
         
